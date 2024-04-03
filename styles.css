@@ -1,0 +1,2425 @@
+body {
+    margin: 0px;
+    background-color: rgba(236, 237, 239, .1);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: black;
+    min-width: 375px;
+    height: auto;
+}
+
+.navbar {
+    left: 0;
+    background-color: rgb(64, 140, 232);
+    width: 100%;
+    height: 80px;
+}
+
+.nav-container {
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(236, 237, 239, 1);
+    margin-left: 46px;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: rgba(236, 237, 239, 1);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 24px;
+    height: 14px;
+}
+
+.burger span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: rgba(236, 237, 239, 1);
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(236, 237, 239, 1);
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%); 
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    text-align: center;
+}
+
+.start {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.start-stickers-375 {
+    display: none;
+}
+
+.start-stickers-1-768 {
+    display: none;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 150px;
+    padding-bottom: -45px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.start-button {
+    border-radius: 20px;
+    width: 340px;
+    height: 70px;
+    background-color: rgba(235, 76, 43, 1);
+    border: none;
+    z-index: 10;
+}
+
+.stbtn-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(236, 237, 239, 1);
+    text-decoration: none;
+}
+
+.start-date-pic  {
+    display: block;
+    z-index: 3;
+}
+
+.start-stickers {
+    position: relative;
+    width: 1312px;
+    height: 994px;
+    display: flex;
+    justify-content: space-between;
+    top: -640px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+.stickers-left {
+    width: 366px;
+}
+
+.stickers-right {
+    width: 484px;
+}
+
+.sate-pic {
+    display: none;
+}
+
+.start-pictures-375 {
+    display: none;
+}
+
+.start-pic-375 {
+    display: none;
+}
+
+.start-pictures-768 {
+    display: none;
+}
+
+.start-stickers-1-480 {
+    display: none;
+}
+
+.start-pictures-480 {
+    display: none;
+}
+
+.text-container-color {
+    background-color: rgba(64, 141, 232, 1);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+}
+
+.cont-text {
+    width: 1240px;
+    height: 282px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 59px;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgba(236, 237, 239, 1);
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.facts-one {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(236, 237, 239, 1);
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    width: 368px;
+    display: inline-block;
+}
+
+.fo-lo {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.facts-two {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(236, 237, 239, 1);
+    text-align: left;
+    width: 386px;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.cont-facts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+.speaker-foto {
+    position: relative;
+    display: inline-block;
+    top: -280px;
+}
+
+.speaker-pictures {
+    position: relative;
+    display: inline-block;
+    width: 1284px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: -240px;
+}
+
+.speaker-pictures-375 {
+    display: none;
+}
+.speaker-pictures-480 {
+    display: none;
+}
+
+.speaker-pictures-768 {
+    display: none;
+}
+
+.advantages-container {
+    align-items: center;
+    height: 685px;
+}
+
+.advant-cont-h {
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    position: relative;
+    padding-top: 115px;
+    margin-bottom: 40px;
+}
+
+.advant-cont-h h4 {
+    margin: 0px;
+}
+
+.line-one {
+    margin-bottom: 66px;
+}
+
+.advant-line-one {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 178px;
+}
+
+.advant-line-one p {
+    margin-top: 15px;
+}
+
+.pic-one {
+    width: 105px;
+}
+
+.pic-two {
+    width: 132px;
+}
+
+.pic-three {
+    width: 136px;
+}
+
+.advant-line-two.comp-picf {
+    display: none;
+}
+
+.advant-line-two {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 204px;
+}
+
+.advant-line-two p {
+    margin-top: 15px;
+}
+
+.pic-four {
+    width: 80px;
+}
+
+.pic-five {
+    width: 128px;
+}
+
+.pic-six {
+    width: 144px;
+}
+
+.coment-container {
+    width: 1240px;
+    height: 716px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 44px;
+    text-align: center;
+}
+
+.coment-cont-h {
+    position: relative;
+}
+
+
+.coment-cont-h h5 {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.recenzie-1440 {
+    display: inline;
+    position: relative;
+    width: 1234px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    top: -40px;
+}
+
+.recenzie-768 {
+    display: none;
+}
+
+.recenzie-480 {
+    display: none;
+}
+
+.recenzie-375 {
+    display: none;
+}
+
+.coment-cont-btn {
+    position: relative;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    width: 295px;
+    height: 220px;
+    text-align: left;
+    top: -270px;
+}
+
+.cont-btn-more {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+
+.cont-btn-more a {
+    height: 220px;
+}
+
+.btn-more-pic {
+    width: 295px;
+}
+
+.reservation {
+    align-items: center;
+}
+
+.reservation-container {
+    width: 1240px;
+    height: 610px;
+    border-radius: 40px;
+    background-color: rgb(64, 140, 232);
+    position: relative;
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 95px;
+}
+
+.container-content {
+    width: 1066px;
+    height: 520px;
+    margin-top: 57px;
+    margin-left: 82px;
+    text-align: left;
+}
+
+.reserv-h {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: rgba(236, 237, 239, 1);
+    display: inline-flex;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 25px;
+}
+
+.reserv-h.mobile-h {
+    display: none;
+}
+
+.reservation-form {
+    width: 440px;
+    height: 375px;
+}
+
+.form-input {
+    display: inline-block;
+    width: 420px;
+    height: 80px;
+    background-color: rgba(236, 237, 239, 1);
+    border-radius: 20px;
+    border: 0px;
+    margin-bottom: 15px;
+    padding: 0;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.reservation-btn {
+    display: inline-block;
+    width: 440px;
+    height: 80px;
+    border-radius: 20px;
+    border: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(235, 76, 43, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgba(236, 237, 239, 1);
+}
+
+.info-link {
+    color: rgba(236, 237, 239, 1);
+}
+
+.container-content p {
+    display: inline-block;
+    margin: 0px;
+    margin-top: 5px;
+    width: 562px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(236, 237, 239, 1);
+}
+
+.container-picture {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 93px;
+    margin-right: 90px;
+}
+
+.reserv-pic {
+    display: inline-block;
+    width: 422px;
+}
+
+.reserv-pic-768 {
+    display: none;
+}
+
+.footer {
+    background-color: rgb(64, 140, 232);
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.fot-container{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 165px;
+}
+
+.footer-brand {
+    text-decoration: none;
+    color: rgba(236, 237, 239, 1);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-wrap{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 138px;
+}
+
+.footer-menu {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 180px;
+    text-align: center;
+}
+
+.footer-menu li {
+    padding-bottom: 10px;
+}
+
+.footer-menu li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(236, 237, 239, 1);
+}
+
+.sm-icons {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 118px;
+    vertical-align: middle;
+    margin-top: 120px;
+}
+
+.instagram {
+    border: 0px;
+    width: 62px;
+    height: 62px;
+    background-color: rgb(64, 140, 232);
+    border: none;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 26px;
+}
+
+.telegram {
+    border: 0px;
+    width: 62px;
+    height: 62px;
+    background-color: rgb(64, 140, 232);
+    border: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.arrow {
+    border-radius: 65px;
+    width: 130px;
+    height: 130px;
+    background-color: rgba(235, 76, 43, 1);
+    border: none;
+    padding: 0;
+    margin-left: 112px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 135px;
+}
+
+.footer-info {
+    width: 1240px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 82px;
+}
+
+.footer-copy {
+    display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(236, 237, 239, 1);
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-info-point {
+    display: inline-flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: end;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-info-point li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgba(236, 237, 239, 1);
+    margin-left: 20px
+}
+
+.footer-info.info-mobilef {
+    display: none;
+}
+
+@media screen and (max-width: 1340px) {
+    body {
+        font-size: 18px;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .nav-container {
+        width: 1120px;
+    }
+
+    .navbar-menu {
+        margin-top: 2px;
+    }
+
+    section {
+        height: 700px;
+    }
+
+    h1 {
+        padding-top: 110px;
+    }
+
+    h2 {
+        font-size: 50px;
+        padding-bottom: 24px;
+    }
+
+    .date-pic {
+        width: 290px;
+    }
+
+    .start-stickers {
+        width: 1120px;
+        top: -590px;
+    }
+
+    .stickers-left {
+        width: 314px;
+    }
+
+    .stickers-right {
+        width: 416px;
+    }
+
+    .text-container-color {
+        height: 380px;
+        top: 160px;
+    }
+
+    .cont-text {
+        width: 1120px;
+        padding-top: 56px;
+    }
+
+    h3 {
+        font-size: 46px;
+        font-weight: 600;
+    }
+
+    .speaker-foto {
+        width: 264px;
+        top: -272px;
+    }
+
+    .speaker-pictures {
+        width: 1100px;
+        top: -200px;
+    }
+
+    .facts-one {
+        font-size: 18px;
+    }
+
+    .facts-two {
+        font-size: 18px;
+    }
+
+    .advant-cont-h {
+        font-size: 60px;
+        padding-top: 68px;
+        padding-bottom: 30px;
+    }
+
+    .line-one {
+        margin-bottom: 58px;
+    }
+
+    .advant-line-one {
+        width: 340px;
+        height: 162px;
+    }
+    
+    .pic-one {
+        width: 90px;
+    }
+
+    .pic-two {
+        width: 114px;
+    }
+
+    .pic-three {
+        width: 118px;
+    }
+
+    .advant-line-two {
+        width: 340px;
+        height: 186px;
+    }
+
+    .pic-four {
+        width: 70px;
+    }
+
+    .pic-five {
+        width: 110px;
+    }
+
+    .pic-six {
+        width: 124px;
+    }
+
+    .coment-container {
+        width: 1120px;
+        height: 680px;
+        padding-top: 36px;
+    }
+
+    .coment-cont-h h5 {
+        font-size: 60px;
+    }
+
+    .recenzie-1440 {
+        width: 1120px;
+    }
+
+    .coment-cont-btn {
+        width: 254px;
+        height: 190px;
+        top: -240px;
+    }
+
+    .btn-more-pic {
+        width: 254px;
+        height: 190px;
+    }
+
+    .cont-btn-more a {
+        width: 254px;
+        height: 190px;
+    }
+
+    .reservation-container {
+        width: 1120px;
+        height: 600px;
+        top: 40px;
+    }
+
+    .container-content {
+        margin-top: 50px;
+        margin-left: 72px;
+    }
+
+    .reserv-h {
+        font-size: 46px;
+        margin-bottom: 22px;
+    }
+
+    .reservation-form {
+        width: 420px;
+        height: 362px;
+    }
+
+    .form-input {
+        width: 400px;
+        height: 76px;
+        border-radius: 18px;
+        font-size: 22px;
+    }
+
+    .reservation-btn {
+        width: 420px;
+        height: 76px;
+        border-radius: 18px;
+        font-size: 22px;
+    }
+
+    .container-content p {
+        font-size: 12px;
+        width: 480px;
+    }
+
+    .container-picture {
+        margin-top: 114px;
+    }
+
+    .reserv-pic {
+        width: 370px;
+    }
+
+    .footer {
+        height: 350px;
+    }
+
+    .footer-content {
+        width: 1062px;
+    }
+
+    .fot-container {
+        margin-top: 146px;
+    }
+
+    .footer-brand {
+        font-size: 50px;
+    }
+
+    .footer-wrap {
+        margin-top: 116px;
+    }
+
+    .footer-menu {
+        padding-left: 140px;
+    }
+
+    .footer-menu li a {
+        font-size: 18px;
+    }
+
+    .sm-icons {
+        margin-top: 108px;
+    }
+
+    .instagram {
+        margin-bottom: 18px;
+    }
+
+    .img-ig {
+        width: 54px;
+    }
+
+    .img-tg {
+        width: 54px;
+    }
+
+    .arrow {
+        width: 110px;
+        height: 110px;
+    }
+
+    .img-arrow {
+        width: 110px;
+        height: 110px;
+    }
+
+    .footer-info {
+        width: 1120px;
+        margin-top: 68px;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+    }
+
+    .footer-info-point li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: 66px;
+    }
+
+    .nav-container {
+        width: 984px;
+        padding-top: 18px;
+    }
+
+    section {
+        height: 600px;
+    }
+
+    h1 {
+        padding-top: 110px;
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .start-button {
+        width: 280px;
+        height: 60px;
+        border-radius: 16;
+    }
+
+    .stbtn-text {
+        font-size: 24px;
+    }
+
+    .date-pic {
+        width: 240px;
+    }
+
+    .start-stickers {
+        width: 984px;
+        top: -520px;
+    }
+
+    .stickers-left {
+        width: 270px;
+    }
+
+    .stickers-right {
+        width: 358px;
+    }
+
+    .text-container-color {
+        height: 300px;
+        top: 150px;
+    }
+
+    .cont-text {
+        width: 984px;
+    }
+
+    h3 {
+        font-size: 38px;
+    }
+
+    .speaker-foto {
+        width: 228px;
+        top: -210px;
+    }
+
+    .facts-one {
+        width: 338px;
+        font-size: 16px;
+    }
+
+    .facts-two {
+        width: 334px;
+        font-size: 16px;
+    }
+
+    .speaker-pictures {
+        width: 984px;
+    }
+
+    .advant-cont-h {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .advant-line-one {
+        width: 270px;
+        height: 144px;
+    }
+
+    .advant-line-two {
+        width: 270px;
+        height: 166px;
+    }
+
+    .pic-one {
+        width: 82px;
+    }
+
+    .pic-two {
+        width: 102px;
+    }
+
+    .pic-three {
+        width: 106px;
+    }
+
+    .pic-four {
+        width: 62px;
+    }
+
+    .pic-five {
+        width: 100px;
+    }
+
+    .pic-six {
+        width: 112px;
+    }
+    
+    .line-one {
+        margin-bottom: 50px;
+    }
+
+    .coment-container {
+        width: 984px;
+        height: 580px;
+    }
+
+    .coment-cont-h h5 {
+        font-size: 50px;
+    }
+
+    .recenzie-1440 {
+        width: 984px;
+    }
+
+    .coment-cont-btn {
+        width: 218px;
+        height: 164px;
+        top: -210px;
+    }
+
+    .btn-more-pic {
+        width: 218px;
+        height: 164px;
+    }
+
+    .reservation-container {
+        width: 960px;
+        height: 500px;
+        top: 50px;
+    }
+
+    .container-content {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .reserv-h {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .reservation-form {
+        width: 360px;
+        height: 308px;
+    }
+
+    .form-input {
+        width: 340px;
+        height: 66px;
+        border-radius: 16px;
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .reservation-btn {
+        width: 360px;
+        height: 66px;
+        border-radius: 16px;
+        font-size: 22px;
+        margin-top: 2px;
+    }
+
+    .container-content p {
+        width: 410px;
+    }
+
+    .container-picture {
+        margin-top: 78px;
+        margin-right: 72px;
+    }
+
+    .footer {
+        height: 300px;
+    }
+
+    .footer-content {
+        width: 908px;
+    }
+
+    .fot-container {
+        margin-top: 126px;
+    }
+
+    .footer-brand {
+        font-size: 40px;
+    }
+
+    .footer-wrap {
+        margin-top: 98px;
+    }
+
+    .footer-menu {
+        padding-left: 100px;
+    }
+
+    .footer-menu li {
+        padding-bottom: 8px;
+    }
+
+    .footer-menu li a {
+        font-size: 16px;
+    }
+
+    .sm-icons {
+        margin-top: 96px;
+        padding-left: 94px;
+    }
+
+    .instagram {
+        margin-bottom: 14px;
+        width: 46px;
+        height: 46px;
+    }
+
+    .telegram {
+        width: 46px;
+        height: 46px;
+    }
+
+    .img-ig {
+        width: 46px;
+        height: 46px;
+    }
+
+    .img-tg {
+        width: 46px;
+        height: 46px;
+    }
+
+    .arrow {
+        width: 95px;
+        height: 95px;
+        margin-top: 102px;
+    }
+
+    .img-arrow {
+        width: 95px;
+        height: 95px;
+    }
+
+    .footer-info {
+        width: 984px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    body {
+        font-size: 16px;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .nav-container {
+        width: 728px;
+    }
+
+    .navbar-brand {
+        font-size: 26px;
+    }
+
+    .navbar-menu li a {
+        margin-left: 30px;
+    }
+
+    section {
+        height: 900px;
+    }
+
+    .start-stickers {
+        display: none;
+    }
+
+    .start-stickers-1-768 {
+        display: inline;
+        position: relative;
+        width: 728px;
+        padding-top: 30px;
+    }
+
+    h1 {
+        padding-top: 0px;
+        margin-top: -30px;
+    }
+
+    .text-container-color {
+        height: 450px;
+        top: 300px;
+    }
+
+    .speaker-pictures {
+        display: none;
+    }
+
+    .speaker-pictures-768 {
+        display: inline;
+        width: 728px;
+    }
+
+    .start-pictures-768 {
+        display: inline;
+        position: relative;
+        width: 128px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 3;
+        top: -400px;
+    }
+
+    .start-stickers-2-768 {
+        width: 674px;
+        padding-left: 42px;
+        padding-right: 12px;
+    }
+
+    .speaker-foto {
+        position: absolute;
+        display: inline-block;
+        width: 308px;
+        height: 459px;
+        top: -260px;
+        margin-left: none;
+    }
+
+    .cont-facts {
+        width: 728px;
+    }
+
+    .cont-text {
+        padding-top: 226px;
+        width: 728px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .advant-cont-h {
+        padding-top: 120px;
+    }
+
+    .line-one {
+        width: 600px;
+        text-align: center;
+        padding-left: 64px;
+        padding-right: 64px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .advant-line-two.comp-picf {
+        display: inline-block;
+    }
+
+    .advant-line-two.mobile-picf {
+        display: none;
+    }
+
+    .pic-three {
+        margin-top: 40px;
+    }
+
+    .pic-four {
+        margin-top: 40px;
+    }
+
+    .comment {
+        height: 760px !important;
+    }
+
+    .coment-container {
+        width: 728px;
+        height: 678px;
+        padding-top: 12px;
+    }
+
+    .recenzie-1440 {
+        display: none;
+    }
+
+    .recenzie-768 {
+        display: inline;
+        width: 674px;
+        padding-left: 52px;
+    }
+
+    .coment-cont-btn {
+        top: -180px;
+        left: 22px;
+    }
+
+    .reservation-container {
+        width: 560px;
+        height: 800px;
+    }
+
+    .container-content {
+        width: 460px;
+        height: 750px;
+        flex-wrap: wrap;
+    }
+
+    .reservation-form {
+        width: 460px;
+    }
+
+    .form-input {
+        width: 440px;
+    }
+
+    .reservation-btn {
+        width: 460px;
+    }
+
+    .container-content p {
+        width: 460px;
+    }
+
+    .container-picture {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .reserv-pic {
+        display: inline;
+        width: 290px;
+    }
+
+    .reserv-pic-768 {
+        display: inline-block;
+        width: 290px;
+        margin-left: 85px;
+        margin-top: 22px;
+    }
+
+    .footer-content {
+        width: 668px;
+    }
+
+    .fot-container {
+        margin-top: 132px;
+    }
+
+    .footer-brand {
+        font-size: 30px;
+    }
+
+    .footer-wrap {
+        margin-top: 98px;
+    }
+
+    .footer-menu {
+        padding-left: 55px;
+    }
+
+    .sm-icons {
+        padding-left: 85px;
+    }
+
+    .arrow {
+        margin-left: 60px;
+    }
+
+    .footer-info {
+        width: 728px;
+        margin-top: 56px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .open {
+        display: flex !important;
+    }
+
+    .navbar {
+        height: 62px;
+    }
+
+    .nav-container {
+        width: 440px;
+        padding-top: 20px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+        z-index: 42;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 170px;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        margin-left: auto;
+        z-index: 40;
+        overflow-y: auto;
+        padding-top: 70px;
+        padding-left: 30px;
+        background-color: rgba(64, 141, 232, 1);
+        animation: burgerAnimation 0.4s;
+    }
+
+    .navbar-menu li {
+        width: 440px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    .navbar-menu li a {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    section {
+        height: 670px;
+    }
+
+    #n1 {
+        padding-top: 24px;
+    }
+
+    .start-stickers-1-768 {
+        display: none;
+    }
+
+    .start-pictures-768 {
+        display: none;
+    }
+
+    .start-stickers-1-480 {
+        display: inline;
+        position: relative;
+        width: 420px;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding-top: 0px;
+        margin-top: -260px;
+        word-wrap: break-word;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        font-size: 30px;
+        padding-bottom: 8px;
+        word-wrap: break-word;
+        width: 222px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .start-button {
+        width: 240px;
+        height: 48px;
+        border-radius: 16px;
+    }
+
+    .stbtn-text {
+        font-size: 20px;
+    }
+
+    .date-pic {
+        width: 200px;
+    }
+
+    .text-container-color {
+        height: 300px;
+        top: 370px;
+    }
+
+    .speaker-foto {
+        width: 216px;
+        height: 322px;
+        top: -300px;
+    }
+
+    .cont-text {
+        width: 440px;
+        padding-top: 38px;
+    }
+
+    .cont-facts {
+        flex-direction: column;
+        margin-top: 12px;
+        width: 440px;
+    }
+
+    .facts-one {
+        display: block;
+        font-size: 14px;
+    }
+
+    .facts-two {
+        font-size: 14px;
+    }
+
+    .speaker-pictures-768 {
+        display: none;
+    }
+
+    .start-pictures-480 {
+        display: inline;
+        position: relative;
+        width: 424px;
+        z-index: 3;
+        top: -180px;
+    }
+
+    .start-stickers-2-480 {
+        width: 424px;
+    }
+
+    .speaker-pictures-480 {
+        display: inline;
+        width: 440px;
+    }
+
+    .fo-lo {
+        padding-bottom: 8px;
+    }
+
+    .facts-one {
+        margin-bottom: 8px;
+    }
+
+    .advantages-container {
+        height: 670px;
+    }
+
+    .advant-cont-h {
+        padding-bottom: 0px;
+        margin-bottom: 22px;
+    }
+
+    .advant-cont-h {
+        font-size: 40px;
+        word-wrap: break-word;
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+    }
+
+    .line-one {
+        width: 440px;
+        padding: 0px;
+        margin-bottom: 18px;
+    }
+
+    .advant-line-one {
+        width: 200px;
+        height: 124px;
+        margin-bottom: 0px;
+    }
+
+    .pic-one {
+        width: 65px;
+    }
+
+    .pic-two {
+        width: 82px;
+    }
+
+    .pic-three {
+        width: 84px;
+    }
+
+    .pic-four {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    .advant-line-two.comp-picf {
+        height: 150px;
+    }
+
+    .advant-line-two {
+        width: 200px;
+        height: 98px;
+    }
+
+    .pic-five {
+        width: 80px;
+    }
+
+    .pic-six {
+        width: 90px;
+    }
+
+    .comment {
+        height: 670px !important;
+    }
+
+    .coment-container {
+        width: 440px;
+        height: 670px;
+    }
+
+    .coment-cont-h h5 {
+        font-size: 40px;
+    }
+
+    .recenzie-768 {
+        display: none;
+    }
+
+    .recenzie-480 {
+        display: inline;
+        width: 440px;
+        margin-top: 10px;
+    }
+
+    .coment-cont-btn {
+        top: -120px;
+        left: 0px;
+    }
+
+    .reservation-container {
+        width: 440px;
+        height: 600px;
+        border-radius: 26px;
+    }
+
+    .container-content {
+        width: 380px;
+        height: 338px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .container-content p {
+        width: 380px;
+    }
+
+    .reserv-h {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+
+    .reservation-form {
+        width: 380px;
+        height: 238px;
+    }
+
+    .form-input {
+        width: 360px;
+        height: 52px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .reservation-btn {
+        width: 380px;
+        height: 54px;
+        margin-top: 4px;
+        font-size: 16px;
+    }
+
+    .reserv-pic-768 {
+        width: 212px;
+        margin-top: 10px;
+        margin-left: 84px;
+    }
+
+    .footer-content {
+        width: 350px;
+        flex-wrap: wrap;
+    }
+
+    .fot-container {
+        width: 350px;
+        margin-top: 40px;
+    }
+
+    .footer-brand {
+        font-size: 46px;
+    }
+
+    .footer-wrap {
+        margin-top: 30px;
+    }
+
+    .footer-menu {
+        padding-left: 0px;
+    }
+
+    .footer-menu li {
+        padding-bottom: 6px;
+    }
+
+    .footer-menu li a {
+        font-size: 14px;
+    }
+
+    .sm-icons {
+        margin-top: 32px;
+        padding-left: 70px;
+    }
+
+    .instagram {
+        margin-bottom: 10px;
+    }
+
+    .img-ig {
+        width: 37px;
+        height: 37px;
+    }
+
+    .img-tg {
+        width: 37px;
+        height: 37px;
+    }
+
+    .arrow {
+        width: 78px;
+        height: 78px;
+        margin-top: 38px;
+        margin-left: 66px;
+    }
+
+    .img-arrow {
+        width: 78px;
+        height: 78px;
+    }
+
+    .footer-info {
+        display: none;
+    }
+
+    .footer-info.info-mobilef {
+        width: 440px;
+        height: 30px;
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-copy {
+        display: inline-block;
+        position: relative;
+        width: 440px;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 300;
+        color: rgba(236, 237, 239, 1);
+        margin: 0px;
+        margin-left: auto;
+        padding: 0px;
+        flex-wrap: wrap;
+        height: 15px;
+    }
+
+    .info-point-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        color: rgba(236, 237, 239, 1);
+        text-decoration: none;
+    }
+
+    .footer-info-point {
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .footer-info-point li {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        color: rgba(236, 237, 239, 1);
+        text-decoration: none;
+    }
+    
+    .footer-info-point li a {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        text-decoration: none;
+        color: rgba(236, 237, 239, 1);
+        margin: 0px;
+        padding: 0px;
+        padding-left: 14px;
+        position: relative;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        font-size: 12px;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+    
+    .nav-container {
+        width: 335px;
+        padding-top: 18px;
+    }
+    
+    .navbar-menu {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        display: none;
+        height: 154px;
+        padding-top: 66px;
+    }
+    
+    .navbar-menu li {
+        display: inline-block;
+        width: 335px;
+    }
+    
+    .navbar li a {
+        font-size: 18px;
+    }
+    
+    .navbar-brand {
+        font-size: 20px;
+    }
+    
+    section {
+        height: 667px;
+    }
+    
+    .start {
+        font-weight: 600;
+        font-size: 36px;
+    }
+    
+    .start-stickers-375 {
+        padding-top: 10px;
+        width: 335px;
+        position: relative;
+        display: inline;
+    }
+
+    .start-pictures-768 {
+        display: none;
+    }
+
+    .start-pictures-480 {
+        display: none;
+    }
+
+    .start-stickers-1-480 {
+        display: none;
+    }
+
+    .speaker-pictures-480 {
+        display: none;
+    }
+
+    h1 {
+        margin-top: -40px;
+        margin-bottom: 0;
+        padding-top: 0px;
+        padding-bottom: -45px;
+    }
+    
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        font-weight: 500;
+        font-size: 32px;
+    }
+    
+    .start-button {
+        border-radius: 14px;
+        width: 220px;
+        height: 46px;
+    }
+    
+    .stbtn-text {
+        font-size: 18px;
+    }
+
+    .start-date-pic {
+        display: block;
+        position: relative;
+    }
+
+    .date-pic {
+        width: 200px;
+    }
+
+    .start-stickers {
+        display: none;
+    }
+    
+    .stickers-left {
+        display: none;
+        width: 20px;
+    }
+    
+    .stickers-right {
+        display: none;
+        width: 20px;
+    }
+
+    .speaker-pictures {
+        display: none;
+    }
+
+    .start-stickers-1-768 {
+        display: none;
+    }
+
+    .start-pictures-375 {
+        display: inline;
+        position: relative;
+        width: 335px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: -30px;
+        padding: 0px;
+    }
+
+    .start-pic-375 {
+        display: inline;
+        position: relative;
+        width: 335px;
+        z-index: 2;
+    }
+
+    .text-container-color {
+        height: 330px;
+        top: 337px;
+        z-index: 1;
+    }
+    
+    .cont-text {
+        width: 335px;
+        height: 282px;
+        padding-top: 75px;
+    }
+    
+    h3 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    .facts-one {
+        font-size: 14px;
+        width: 325px;
+        display: block;
+        margin-bottom: 6px;
+    }
+    
+    .fo-lo {
+        margin-top: 0;
+        padding-bottom: 6px;
+    }
+    
+    .facts-two {
+        font-size: 14px;
+        width: 325px;
+    }
+    
+    .cont-facts {
+        margin-top: 8px;
+        width: 325px;
+    }
+    
+    .speaker-foto {
+        position: absolute;
+        display: inline-block;
+        top: -224px;
+        width: 190px;
+        height: 284px;
+    }
+    
+    .speaker-pictures {
+        display: none;
+    }
+
+    .speaker-pictures-768 {
+        display: none;
+    }
+
+    .speaker-pictures-375 {
+        display: inline-block;
+        position: relative;
+        width: 335px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        top: -30px;
+        z-index: 2;
+    }
+
+    .advantages-container {
+        text-align: center;
+        align-items: center;
+        display: inline-block;
+        height: 670px;
+        width: 335px;
+    }
+    
+    .advant-cont-h {
+        font-size: 40px;
+        padding-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .line-one {
+        margin-bottom: 10px;
+        width: 335px;
+    }
+
+    .advant-line-one {
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+        align-items: left;
+    }
+    
+    .advant-line-one p {
+        margin-top: 15px;
+        margin-bottom: 4px;
+    }
+    
+    .pic-one {
+        width: 52px;
+    }
+    
+    .pic-two {
+        width: 66px;
+    }
+    
+    .pic-three {
+        width: 68px;
+    }
+
+    .advant-line-two.comp-picf {
+        display: inline-block;
+    }
+
+    .pic-four {
+        width: 32px;
+        margin-top: 0px;
+    }
+    
+    .advant-line-two {
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 120px;
+        align-items: left;
+    }
+    
+    .advant-line-two.mobile-picf {
+        display: none;
+    }
+    
+    .pic-five {
+        width: 64px;
+    }
+    
+    .pic-six {
+        width: 72px;
+    }
+
+    .comment {
+        height: 667px !important;
+    }
+    
+    .coment-container {
+        width: 335px;
+        height: 664px;
+        margin: 0px;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .coment-cont-h {
+        position: relative;
+    }
+    
+    .coment-cont-h h5 {
+        font-size: 40px;
+    }
+
+    .recenzie-1440 {
+        display: none;
+    }
+
+    .recenzie-768 {
+        display: none;
+    }
+
+    .recenzie-480 {
+        display: none;
+    }
+
+    .recenzie-375 {
+        display: inline;
+        position: relative;
+        width: 335px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .coment-cont-btn {
+        width: 192px;
+        height: 140px;
+        text-align: left;
+        top: -150px;
+    }
+    
+    .cont-btn-more a {
+        height: 140px;
+    }
+    
+    .btn-more-pic {
+        width: 192px;
+    }
+    
+    .reservation-container {
+        width: 335px;
+        height: 576px;
+        border-radius: 26px;
+        top: 34px;
+        flex-direction: column;
+    }
+    
+    .container-content {
+        width: 286px;
+        height: 556px;
+        margin-top: 21px;
+        margin-left: 25px;
+    }
+    
+    .reserv-h {
+        display: none;
+    }
+
+    .reserv-h.mobile-h {
+        font-family: 'Raleway', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: rgba(236, 237, 239, 1);
+        display: inline-flex;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 16px;
+    }
+    
+    .reservation-form {
+        width: 286px;
+        height: 236px;
+    }
+    
+    .form-input {
+        width: 274px;
+        height: 52px;
+        border-radius: 13px;
+        margin-bottom: 8px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+    
+    .reservation-btn {
+        width: 286px;
+        height: 52px;
+        border-radius: 13px;
+        margin-top: 4px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .container-content p {
+        margin-top: 4px;
+        width: 286px;
+        font-size: 8px;
+    }
+    
+    .container-picture {
+        display: inline-block;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    
+    .reserv-pic {
+        display: inline-block;
+        width: 212px;
+    }
+
+    .reserv-pic-768 {
+        display: none;
+    }
+    
+    .footer-content {
+        width: 335px;
+    }
+    
+    .fot-container{
+        margin-top: 42px;
+        width: 335px;
+        height: 48px;
+        text-align: center;
+    }
+    
+    .footer-brand {
+        font-size: 40px;
+    }
+    
+    .footer-wrap{
+        margin-top: 40px;
+        height: 86px;
+        width: 100px;
+        padding-left: 20px;
+    }
+    
+    .footer-menu li {
+        padding: 0px;
+        margin-bottom: 6px;
+    }
+    
+    .footer-menu li a {
+        font-size: 14px;
+    }
+    
+    .sm-icons {
+        margin-top: 48px;
+        padding-left: 50px;
+    }
+    
+    .instagram {
+        width: 31px;
+        height: 31px;
+        margin-bottom: 13px;
+    }
+    
+    .telegram {
+        width: 31px;
+        height: 31px;
+    }
+
+    .img-ig {
+        width: 31px;
+        height: 31px;
+    }
+    
+    .img-tg {
+        width: 31px;
+        height: 31px;
+    }
+
+    .arrow {
+        border-radius: 33px;
+        width: 66px;
+        height: 66px;
+        margin-left: 49px;
+        margin-top: 52px;
+    }
+
+    .img-arrow {
+        width: 66px;
+        height: 66px;
+    }
+    
+    .footer-info {
+        display: none;
+    }
+
+    .footer-info.info-mobilef {
+        width: 335px;
+        height: 30px;
+        margin-top: 32px;
+    }
+    
+    .footer-copy {
+        width: 335px;
+        font-size: 10px;
+        height: 12px;
+    }
+
+    .footer-info-point li a {
+        font-size: 10px;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
