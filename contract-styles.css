@@ -735,7 +735,7 @@ h1 {
 
 @media screen and (max-width:479px) {
     body {
-        font-size: 12px;
+        font-size: 14px;
         height: auto;
         overflow-x: hidden;
     }
@@ -782,7 +782,7 @@ h1 {
     }
 
     .dohoda-one {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .footer-content {
